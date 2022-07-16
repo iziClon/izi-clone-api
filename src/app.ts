@@ -21,6 +21,7 @@ app.listen(5200, async () => {
         const connection = await createConnection();
         if (connection) {
             console.log('DATABASE Connect');
+
         }
     } catch (err) {
         if (err) {
@@ -28,3 +29,6 @@ app.listen(5200, async () => {
         }
     }
 });
+
+
+//asdasd

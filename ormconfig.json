@@ -1,0 +1,22 @@
+{
+  "type": "mysql",
+  "host": "remotemysql.com",
+  "port": 3306,
+  "username": "uwETQSYns8",
+  "password": "jiNalsBJ1F",
+  "database": "uwETQSYns8",
+  "migrationsRun": true,
+  "logging": false,
+  "entities": [
+    "src/entity/**/*.ts"
+  ],
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}

@@ -6,8 +6,9 @@ import { CommonFields } from './commonFields';
 import { Category } from './category';
 import { User } from './user';
 import { IProduct } from '../interfaces';
+import { config } from '../configs';
 
-@Entity('Products', { database: 'uwETQSYns8' })
+@Entity('Products', { database:  config.DB_NAME })
 export class Product extends CommonFields implements IProduct {
     @Column({
         type: 'int',

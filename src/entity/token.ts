@@ -5,8 +5,9 @@ import {
 import { IToken } from '../interfaces';
 
 import { User } from './user';
+import { config } from '../configs';
 
-@Entity('Tokens', { database: 'uwETQSYns8' })
+@Entity('Tokens', { database:  config.DB_NAME })
 export class Token implements IToken {
     @PrimaryGeneratedColumn()
         id: number;

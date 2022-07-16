@@ -4,8 +4,9 @@ import {
 
 import { IUser } from '../interfaces';
 import { Product } from './product';
+import { config } from '../configs';
 
-@Entity('Users', { database: 'uwETQSYns8' })
+@Entity('Users', { database:  config.DB_NAME })
 export class User implements IUser {
     @PrimaryGeneratedColumn()
 

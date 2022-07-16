@@ -2,10 +2,10 @@ import express from 'express';
 import 'reflect-metadata';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-import { createConnection } from 'typeorm';
+// import { createConnection } from 'typeorm';
 
 import { apiRouter } from './routes';
-import {config} from "./configs";
+import { config } from './configs';
 
 const app = express();
 app.use(cors());
@@ -22,7 +22,6 @@ app.listen(config.PORT, async () => {
         // const connection = await createConnection();
         if (1) {
             console.log('DATABASE Connect');
-
         }
     } catch (err) {
         if (err) {
